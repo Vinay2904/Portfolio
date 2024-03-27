@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./CSS/Home.css">
+  <link rel="stylesheet" href="./CSS/Contact.css">
+  <link rel="stylesheet" href="./CSS/project.css">
+  <link rel="stylesheet" href="./CSS/Skills.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+  <title>Home page</title>
+  <style>
+ </style>
+</head>
+<body>
+   <div id="Home" > 
+       <!-- code for nav bar -->
+           <nav class="navbar">
+           <!-- nav-brand code -->
+           <div class="logo">
+               <a href="#">Portfolio.</a>
+           </div>
+           <!-- nav link ul li  -->
+           <ul class="nav-links" id="navLinks">
+               <li><a id="active" href="#Home" style="--i:1;">Home</a></li>
+               <li><a href="#Skill"  style="--i:2;">Skills</a></li>
+               <li><a href="#Project"  style="--i:3;">Project</a></li>
+               <li><a href="#Contact"  style="--i:4;">Contact</a></li>
+          </ul>
+          <!-- responsive button -->
+          <div class="burger" id="burger" onclick="toggleNav()">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+           </nav>
+      <!-- home content display -->
+          <div class="content">
+          <!-- wrapper div -->  
+          <section>
+          <div class="home" id="content">
+               <!-- main div -->
+              <div class="image-content">
+                  <!-- image div content -->
+                   <img src="./Image/Atharva.jpeg" alt="error">
+              </div>
+            
+              <div class="home1">
+                   <!-- home div open -->
+                   <h3 id="home-first">Hello, It's Me</h3>
+                   <h1>Atharva Lende</h1> 
+                   <h3 class="home12">And I' am <br class="breakline"><span class="spc-text">Full Stack Developer</span></h3>
+                   <p>🔥Innovative Computer Engineer with a blend of strategic hardware and software acumen, dedicated to propelling technological frontiers</p>
+                <div class="social-button"> 
+                    <!-- social media link  -->
+                   <a href="https://www.instagram.com/_shreelende_/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-brands fa-github"></i></a>
+                   <a href="https://www.linkedin.com/in/atharva-lende-65813122a"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="mailto:lendeatharva30@gmail.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+               </div>
+        
+                <!-- Download button for resume  -->
+              <div class="button-resume" id="Button">
+                 <button type="button"><span class="span-download"><i class="fa-solid fa-download"></i>  </span><a href="../File/Atharva_lende_+919168582807.pdf" download="Atharva_lende_9168582807.pdf" >Download Resume</a></button>
+              </div> 
+        </div> 
+          </div>
+          </section>
+          <section id="Skill">
+            <!-- Header part of Skills page -->
+  
+        <!-- Main part  of Project page  -->
+        <div class="skills"> 
+          <div class="Skill-page" style="margin-top:150px;">
+            <h2> My <span style="color:#0ef;">Skills</span></h2>
+            </div>
+        <!-- Big Div inside small Div -->
+        <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <ul>
+           <li>Java <span class="skill-level">Intermediate</span></li>
+           <li>C <span class="skill-level">Advanced</span></li>
+           <li>C++ <span class="skill-level">Advanced</span></li>
+        </ul>
+        </div>
+        <!-- Big Div inside small Div -->
+        <div class="skill-category">
+        <h3>Web Development</h3>
+        <ul>
+           <li>HTML5 <span class="skill-level">Advanced</span></li>
+           <li>CSS3 <span class="skill-level">Advanced</span></li>
+           <li>JavaScript<span class="skill-level">Advanced</span></li>
+        </ul>
+        </div>
+        <!-- Big Div inside small Div -->
+        <div class="skill-category">
+        <h3>Frame-Works</h3>
+        <ul>
+           <li>React.Js <span class="skill-level">Advanced</span></li>
+           <li>Tailwind<span class="skill-level">Advanced</span></li>
+           <li>Material-UI<span class="skill-level">Advanced</span></li>
+        </ul>
+        </div>
+        <!-- Big Div inside small Div -->
+        <div class="skill-category">
+        <h3>Backend-Tools</h3>
+        <ul>
+           <li>Node.Js <span class="skill-level">Advanced</span></li>
+           <li>Express.Js<span class="skill-level">Advanced</span></li>
+           <li>Php<span class="skill-level">Advanced</span></li>
+        </ul>
+        </div>
+        </div>
+          </section>
+          <section id="Contact">
+            <div class="Skill-page">
+             <h2>Contact <span style="color:#0ef;">Me !</span></h2>
+            </div>
+            <div class="form-page">
+               <form action="" onsubmit="validateForm()">
+                   <input type="text" id="name" placeholder="Full Name" required>
+                   <input type="email"  id="mail" placeholder="Email" required>
+                   <input type="text" id="phone" placeholder="Mobile Number"  required> 
+                   <input type="text"  id="subject" placeholder="Subject" required>
+                   <textarea name="textarea"  id="message" placeholder="Your Message"></textarea>
+                   <input type="submit" >  
+               </form>
+            </div>
+          </section>
+          <section id="Project">
+            <!-- Header part of Project page -->
+            <div class="Skill-page">
+            <h2> My <span style="color:#0ef;">Project</span></h2>
+            </div> 
+            <!-- Main part  of Project page  -->
+            <div class="project-page">
+            <!-- Big Div inside small Div -->
+            <div class="project-cat">
+             <H3>Standalone E-Commerce Launch </h3>
+             <p>FullStack Java Developer,Led transition from standalone business to dynamic e-commerce platform using Java.Designed and implemented intuitive user interfaces and secure payment gateways.</p>   
+             <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            
+            </div>
+            <div  class="project-cat">
+            <H3>Personal Doctor Website Development</h3>
+            <p>Mern Stack Develoer, Leveraged MERN technologies to create an integrated medical platform.Showcased the ability to merge healthcare and technology for improved patient engagement</p>   
+            <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>Chemical Analysis & Compound Visualization</h3>
+            <p>Demonstrated proficiency in modern development technologies and API utilization for enhancing chemical insights</p>   
+            <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>Resumer-Builder</h3>
+            <p>Full Stack project for making new resume by using various template.The Completetly Implemented on  React.js,node.js,express.js and the database is used as Mongdb</p>   
+            <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>Todo-LIST</h3>
+            <p>The Project is related to maintain the daily list of working and  Completetly Implemented using  Framework of Frontend such React.js  and some concept of such as reactDom,router etc</p>   
+            <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>Inventory-management-api</h3>
+            <p>Inventory Management API  is The API allows you to manage and track inventory for various products in your system.this API is designed to help you streamline your processes and total implemented in node.js</p>   
+            <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>     
+            </div>
+          </section>
+
+          </div>
+          </div>
+<script src="./JS/script.js"></script>
+</body>
+</html>
+
